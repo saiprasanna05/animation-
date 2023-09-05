@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>body{
+        margin: 0%;
+        
+    }
+    
+    .anime{
+        background-color: aqua;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ani{
+        background: linear-gradient(45deg, yellow, rgb(241, 0, 40),rgb(124, 0, 128),blue);
+        height: 100vh;
+        width: 100vw;
+        background-size: 400%;
+        animation: bg-animation 5s infinite alternate;
+    }
+    @keyframes bg-animation {
+        0%{
+            background-position: left;
+        }
+        100%{
+            background-position: right;
+        }
+    }
+    .naviagtion h1{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:bold;
+        font-size: 5rem;
+        color: white;
+    }
+    .naviagtion p{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight:bold;
+        color: white;
+        font-size: 3rem;
+    
+    }
+    #button{
+        display:inline-block;
+        margin-left: 45vw;
+        padding: 10px 20px;
+        margin-top: 100px;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        
+        background-color: rgb(255, 255, 255,0.3);
+        border: solid rgb(255, 255, 255,0.1);
+        font-size: 1.5rem;
+        font-weight:lighter;
+        border-radius: 10px;
+        transition: transform 200ms;
+    }
+    #button:hover{
+        transform: scale(1.1);
+        
+    }
+    @media screen and (max-width:500px) and (min-width:100px) {
+        #button{
+            margin-left: 120px;
+        }
+        .naviagtion p{
+            margin-left: 50px;
+            font-size: 2.5rem;
+        }
+        .naviagtion h1{
+            margin-left: 10px;
+        }
+        .ani{
+            background-size: 250%;
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="anime">
+        <div class="ani">
+            <div class="naviagtion">
+                <h1>welcome</h1>
+                <p>This Is My First Animaton !</p>
+                <BUtton id="button">Let's get in</BUtton>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+</body>
+</html>
